@@ -4,15 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
+import{HttpClientModule} from '@angular/common/http';
+import{ApiservicesService} from './service/apiservices.service';
+import { TopnewsComponent } from './topnews/topnews.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopnewsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiservicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

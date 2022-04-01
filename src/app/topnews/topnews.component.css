@@ -1,0 +1,25 @@
+.btn{
+    color: aliceblue;
+    background-color: black;
+    
+}
+
+.box{
+    padding: 0px 10px 10px 10px;
+    background-color:#EFFFFD;
+}
+
+.row
+{
+    margin-top: 10px;
+    height:fit-content;
+    width:fit-content;
+}
+.body{
+    background-color:#EFFFFD ;
+}
+
+.head{
+    margin-left: 20px;
+    margin-top: 10px;
+}
