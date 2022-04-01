@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 export class ApiservicesService {
 
   constructor(private _http:HttpClient) { }
-
-  ApiUrl="https://newsapi.org/v2/top-headlines?country=us&apiKey=d0c097a4408344abbd064d8304b9399a";
+  proxyUrl = "https://cors-anywhere.herokuapp.com/"
+  ApiUrl=`${this.proxyUrl}https://newsapi.org/v2/top-headlines?country=us&apiKey=d0c097a4408344abbd064d8304b9399a`;
 
   topnews():Observable<any>
   {
